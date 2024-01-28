@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Spongebob Squarpants</title>
+    <style>
+        body {
+            background-image: url("bg.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-auto-flow: dense;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+            width: 100%;
+            background-color: #b6dbea;
+        }
+
+        .grid-item {
+            background-color: #b6dbea;
+            width: 100%;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .grid-container p {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1rem;
+        }
+    </style>
+    <link rel="stylesheet" href="w3.css">
+</head>
+
+<body>
+
+    <img src="atas.jpeg" style="width: 100%;">
+
+    <div class="w3-bar w3-light-blue w3-card-4">
+        <button class="w3-bar-item w3-button" onclick="openKota('profile')">Profile</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('spongebob')">Spongebob</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('friends')">Friends</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('pictures')">Pictures</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('garry')">Garry</button>
+
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Other</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <button class="w3-bar-item w3-button" onclick="openKota('home')">Home</button>
+                <button class="w3-bar-item w3-button" onclick="openKota('work')">Work</button>
+                <button class="w3-bar-item w3-button" onclick="openKota('school')">School</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="profile" class="w3-container kota w3-animate-zoom w3-card-4 w3-light-gray"
+        style="display:none; opacity: 70%;">
+        <center>
+            <h1><b>PROFILE</h1>
+            <img src="profile.jpg" style="width: 25%;">
+            <p> NAMA : TAURA FARHATSARI</p>
+            <p> NIM : 10123230</p>
+            <p> KELAS : IF-6</p>
+        </center>
+    </div>
+
+    <div id="spongebob" class="w3-container kota w3-animate-zoom w3-card-4 w3-white"
+        style="display:none; opacity: 70%;">
+        <center>
+            <h1><b>Spongebob Squarepants</h1>
+            <br>
+            <img src="sponge.jpg" style="width: 25%;">
+            <br><br>
+            <p>Halo Semua! AHAHAHA</p>
+            <br>
+            <p>Dengan Spongebob disini...</p>
+            <p>Aku telah membuat laman web yang bisa kalian kunjungi agar kita bisa saling mengenal</p>
+            <p>Kalian bisa membuka web ini kapanpun yang kalian mau. So, tunggu apalagi? Let's go!</p>
+            <br><br>
+        </center>
+    </div>
+
+    <div id="friends" class="w3-display-container kota w3-animate-left w3-card-4 w3-light-gray"
+        style="display:none; opacity: 70%;">
+        <center>
+            <h1><b>About My Friends</h1></b>
+        </center>
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="w3-panel w3-white w3-round-xlarge">
+                    <p>
+                        <center>
+                            <h2>Patrick Star</h2>
+                            <img src="pat.jpg" style="width: 25%;">
+                            <p>Dia Patrick, temanku sejak kecil.</p>
+                        </center>
+                    </p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="w3-panel w3-white w3-round-xlarge">
+                    <p>
+                        <center>
+                            <h2>Squidward Tentacles</h2>
+                            <img src="squid.jpg" style="width: 22%;">
+                            <p>Squidward adalah teman sekaligus rekan kerjaku.</p>
+                        </center>
+                    </p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="w3-panel w3-white w3-round-xlarge">
+                    <p>
+                        <center>
+                            <h2>Sandra Cheeks</h2>
+                            <img src="sandy.jpg" style="width: 25%;">
+                            <p>Dan ini Sandy. Dia tupai yang sangat jenius.</p>
+                        </center>
+                    </p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="w3-panel w3-white w3-round-xlarge">
+                    <p>
+                        <center>
+                            <h2>Tuan Eugene Krabs</h2>
+                            <img src="mr.jpg" style="width: 25%;">
+                            <p>Bosku pemilik restaurant Krusty Krab.</p>
+                        </center>
+                    </p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="w3-panel w3-white w3-round-xlarge">
+                    <p>
+                        <center>
+                            <h2>Plankton</h2>
+                            <img src="plankton.jpg" style="width: 22%;">
+                            <p>Plankton adalah musuh bebuyutan Tuan Krab.</p>
+                        </center>
+                    </p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="w3-panel w3-white w3-round-xlarge">
+                    <p>
+                        <center>
+                            <h2>Nyonya Puff</h2>
+                            <img src="mrs.jpg" style="width: 25%;">
+                            <p>Nyonya Puff adalah guru kelas mengemudiku.</p>
+                        </center>
+                    </p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="w3-panel w3-white w3-round-xlarge">
+                    <p>
+                        <center>
+                            <h2>Pearl</h2>
+                            <img src="pearl.jpg" style="width: 25%;">
+                            <p>Lalu terakhir ada Pearl putri Tuan Krabs.</p>
+                        </center>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="pictures" class="w3-container kota w3-animate-zoom w3-card-4 w3-light-gray"
+        style="display:none; opacity: 70%;">
+        <center>
+            <h1><b>Beberapa Foto Saat Kami Bersama</b></h1>
+        </center>
+
+        <div class="w3-panel w3-white w3-round-xlarge">
+            <p>
+                <center>
+                    <h2>Taman Bermain</h2>
+                    <img src="we.jpg" style="width: 25%;">
+                    <p>Note: Bianglala</p>
+                </center>
+            </p>
+        </div>
+
+        <div class="w3-panel w3-white w3-round-xlarge>">
+            <p>
+                <center>
+                    <h2>Rumah Patrick</h2>
+                    <img src="weee.jpg" style="width: 25%;">
+                    <p>Note: Chesse</p>
+                </center>
+            </p>
+        </div>
+
+        <div class="w3-panel w3-white w3-round-xlarge>">
+            <p>
+                <center>
+                    <h2>Rumah Patrick</h2>
+                    <img src="wee.jpg" style="width: 25%;">
+                    <p>Note: Wleee</p>
+                </center>
+            </p>
+        </div>
+
+        <div class="w3-panel w3-white w3-round-xlarge>">
+            <p>
+                <center>
+                    <h2>Kamar Squidward</h2>
+                    <img src="weeee.jpg" style="width: 25%;">
+                    <p>Note: Valentine</p>
+                </center>
+            </p>
+        </div>
+
+        <div class="w3-panel w3-white w3-round-xlarge>">
+            <p>
+                <center>
+                    <h2>Kamar Squidward</h2>
+                    <img src="weeeee.jpg" style="width: 25%;">
+                    <p>Note: Malam Tahun Baru</p>
+                </center>
+            </p>
+        </div>
+
+        <div class="w3-panel w3-white w3-round-xlarge>">
+            <p>
+                <center>
+                    <h2>Kamar Squidward</h2>
+                    <img src="weeeeee.jpg" style="width: 25%;">
+                    <p>Note: Hari Paskah</p>
+                </center>
+            </p>
+        </div>
+
+    </div>
+
+    <div id="garry" class="w3-container kota w3-animate-left w3-card-4 w3-light-gray"
+        style="display:none; opacity: 70%;">
+        <center>
+            <h2><b>Peliharaan Kesayanganku Garry</h2></b>
+            <img src="garry.jpg" style="width: 20%;">
+            <p>Dia selalu bilang "meow meow meow"</p>
+        </center>
+    </div>
+
+
+
+    <div id="home" class="w3-container kota w3-animate-bottom w3-card-4 w3-light-gray"
+        style="display:none; opacity: 70%;">
+        <center>
+            <h1><b>Rumah Nanas</h1>
+            <img src="homee.jpg" style="width: 25%;">
+            <p></p>
+    </div>
+
+    <div id="work" class="w3-container kota w3-animate-zoom w3-card-4 w3-light-gray"
+        style="display:none; opacity: 70%;">
+        <center>
+            <h1><b>The Krusty Krab</h1>
+                <img src="krusty.jpg" style="width: 25%;">
+                <p></p>
+        </center>
+    </div>
+    <div id="school" class="w3-container kota w3-animate-top w3-card-4 w3-light-gray"
+        style="display:none; opacity: 70%;">
+        <center>
+            <h1><b>Sekolah Izin Mengemudi Ny. Puff</h1>
+                <img src="schooll.jpg" style="width: 25%;">
+                <p></p>
+        </center>
+    </div>
+
+    <script>
+        function openKota(namakota) {
+            var i;
+            var x = document.getElementsByClassName("kota");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(namakota).style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>
